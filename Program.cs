@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-string[] array_of_words_1 = {"Hello", "2", "world", ":-)"};
+﻿string[] array_of_words_1 = {"Hello", "2", "world", ":-)"};
 string[] array_of_words_2 = {"1234", "1567", "-2", "computer science"};
 string[] array_of_words_3 = {"Russia", "Denmark", "Kazan"};
 var str_1 = string.Join(", ", array_of_words_1);
@@ -23,8 +16,8 @@ void check_words_array(string[] arr)
             words.Add(word);
         }
     }
-    var stroka = string.Join(", ", words);
-    Console.Write(stroka + "]");
+    var sorted_string = string.Join(", ", words);
+    Console.Write(sorted_string + "]");
 }
 
 Console.Write("\n" + "[" + str_1 + "]" + " -> ");
@@ -33,4 +26,3 @@ Console.Write("\n" + "[" + str_2 + "]" + " -> ");
 check_words_array(array_of_words_2);
 Console.Write("\n" + "[" + str_3 + "]" + " -> ");
 check_words_array(array_of_words_3);
-
