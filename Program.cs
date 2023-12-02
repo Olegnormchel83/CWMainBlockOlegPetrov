@@ -11,17 +11,18 @@ string[] array_of_words_3 = {"Russia", "Denmark", "Kazan"};
 
 void check_words_array(string[] arr)
 {
-    int count_words = 0, count_letters = 0;
+    int count_words = 0, count_symbols = 0;
 
     Console.WriteLine("Массив 1: ");
     foreach (string word in array_of_words_1)
     {
         count_words++;
-        count_letters = word.Length;
-        Console.WriteLine($"{word} - Количество символов: {count_letters}");
+        count_symbols = word.Length;
+        if (count_symbols <= 3)
+        {
+            Console.WriteLine($"[{word}]");
+        }
     }
-
-Console.WriteLine($"Количество слов: {count_words}");
 }
 
 check_words_array(array_of_words_1);
