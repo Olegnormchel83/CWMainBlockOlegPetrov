@@ -25,3 +25,4 @@ Console.WriteLine($"Количество слов: {count_words}");
 }
 
 check_words_array(array_of_words_1);
+
